@@ -1,0 +1,14 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <p><div class="form-field">
+            <input class="form-control" type="text" name="username" placeholder="Tên Đăng Nhập..">
+        </div></p>
+        <p><div class="form-field">
+            <input class="form-control" type="password" name="pass" placeholder="Mật Khẩu..">
+        </div></p>
+        <p><input id="form-button" class="btn btn-success" type="submit" value="Đăng nhập"></p>
+    </form>
+{% endblock %}
